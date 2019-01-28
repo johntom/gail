@@ -11,6 +11,11 @@ export class Home {
     this.appService = appService;
     this.dataService = dataService;
   }
+
+ version = 200.01
+  versionDate = 'Thur 1/24/2019'
+
+
   //   this.dataService.loadCodes(values[1]), resolve all lists
   activate() {
     // if (this.appService.LookupDataLoaded) {

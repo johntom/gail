@@ -1,10 +1,16 @@
 <!doctype html>
 <html>
   <head>
-    <title class="drag-container drag-item">Sample Layout</title>
-    <meta charset="utf-8" class="drag-item">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" class="drag-item">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" class="drag-item">
+    <title>MRG2</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.default.min.css">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.bootstrap.min.css">
     <style>
       html, body {
         height: 100%;
@@ -14,48 +20,48 @@
         top: 50%;
         left: 50%;
         margin-left: -100px;
-      }
-    </style>    
-    <link rel="shortcut icon" href="https://frontendcreator.com/favicon.ico" type="image/x-icon" class="drag-item">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" class="drag-item">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" class="drag-item">
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.common.min.css" class="drag-item">
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.default.min.css" class="drag-item">
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.bootstrap.min.css" class="drag-item">
-    <!-- <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/> -->
-
-    </head>
-  <body aurelia-app="src/main">
-    <h1 class="loading">Loading...</h1>    
-    
-    <script src="https://mattduffield.github.io/rjs-bundle/node_modules/requirejs/require.js" class="drag-container drag-item"></script>
-    <script src="https://mattduffield.github.io/rjs-bundle/config.js" class="drag-container drag-item"></script>
-    <script class="drag-container drag-item">
-      require.config({
-        paths: {     
-          "moment": "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min",
-          "jquery": "https://code.jquery.com/jquery-3.1.1.min",
-          "bootstrap": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min",
-          "aurelia-fetch-client": "https://mattduffield.github.io/rjs-bundle/node_modules/aurelia-fetch-client/dist/amd/aurelia-fetch-client",
-          "kendo.all.min": "https://fec.blob.core.windows.net/bundles/kendo-ui/2017.2.621/kendoui-javascript",
-          "aurelia-kendoui-bridge": "https://fec.blob.core.windows.net/bundles/kendo-ui/2017.2.621/aurelia-kendoui-bridge",
-          // "aurelia-dialog": "https://5924b98cbd966f546312882f.blob.core.windows.net/bundles/aurelia-dialog/aurelia-dialog",
-          "aurelia-bootstrap": "https://fec.blob.core.windows.net/bundles/aurelia-bootstrap/0.1.20/aurelia-bootstrap",
-          "tether": "https://fec.blob.core.windows.net/bundles/tether/1.4.3/tether",
-          "velocity-animate": "https://fec.blob.core.windows.net/bundles/velocity-animate/1.5.1/velocity-animate"
-    
-        },
-        shim: {
-          'bootstrap': ['jquery']
+      }    
+    </style>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
         }
-      })
+      }(window.location))
     </script>
-    <script src="https://mattduffield.github.io/rjs-bundle/bundles/aurelia.js" class="drag-container drag-item"></script>
-    <script src="https://mattduffield.github.io/rjs-bundle/bundles/babel.js" class="drag-container drag-item"></script>
-
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script> -->
-    <script class="drag-container drag-item">
-      require(['aurelia-bootstrapper']);
-    </script>
+  </head>
+  <body aurelia-app="main">
+    <h1 class="loading">Loading...</h1>
+<!-- global  <script src="renderjson.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/kendo.all.min.js"></script>
+    <script src="https://unpkg.com/systemjs@0.19.41/dist/system.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script src="index.dev.js"></script>
+   
   </body>
 </html>

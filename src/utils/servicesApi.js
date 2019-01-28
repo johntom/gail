@@ -11,7 +11,8 @@ export class ApiService {
     this.upmess = ''
     //   this.baseweb = 'http://localhost:8080/api/';
     //  this.baseweb = 'http://jif.bergenrisk.com:8080/api/';
-    this.baseweb = 'http://74.114.164.24/api/'
+    // this.baseweb = 'http://74.114.164.24/api/'
+     this.baseweb ='https://artbased.com/api/'
   }
 
 

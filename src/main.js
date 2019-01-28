@@ -3,7 +3,7 @@ export function configure(aurelia) {
     .standardConfiguration()
     .developmentLogging()
     .feature('src/resources')
-    .plugin('aurelia-dialog')
+    // .plugin('aurelia-dialog')
      .plugin('aurelia-kendoui-bridge')
      .plugin('aurelia-bootstrap', config => {
       config.options.accordionCloseOthers = true;

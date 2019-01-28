@@ -6,7 +6,7 @@ import { MyDataService } from "../../services/my-data-service";
 
 
 export class Home {
-  heading = "Welcome to the GP Home page!";
+  heading = "Welcome to the GP Home page! 012819";
   constructor(appService, dataService) {
     this.appService = appService;
     this.dataService = dataService;
